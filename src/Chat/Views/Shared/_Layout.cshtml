@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Test</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+				<a class="navbar-brand">Turing Test</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/js/jquery.js"></script> 
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+	<script src="~/lib/react.js"></script>
+	<script src="~/lib/jquery.signalR.js"></script>
+	<script src="/signalr/js"></script>
+	<script src="~/main.js"></script>
+	@RenderSection("scripts", required: false)
+</body>
+</html>
